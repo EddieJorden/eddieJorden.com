@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script>
+                console.log("hola world")
+            </script>
+            <link rel="stylesheet" href="eddieJorden.com.css">
+            <meta charset="utf-8" />
+        </head>
+        <body>
+            <h1 id='title'>
+            </h1>
+            <script type = "text/javascript">
+                class Person {
+                    constructor(name) {
+                        this.name = name;
+                        
+                    }
+                    luckyNumber() {
+                        const randomNumber = Math.random() * 9
+                        return Math.floor(randomNumber) + 1
+                    } 
+                } 
+
+
+                console.log("this.name", this.name)
+                const eddie = new Person("eddie")
+                console.log(eddie)
+                document.getElementById('title').innerText = `a string welcoming ${eddie.name} who is the coder`
+            </script>
+            <h2>
+                your lucky # 1 - 9 today is...
+            </h2>
+            <div class='sub-section'>
+                <h2 id='sub-section'>
+                </h2>
+                <button onClick='onClick()'>
+                    Click this Button
+                </button>
+                <script>
+                    const onClick = (e) => {
+                        
+                        document.getElementById('sub-section').innerText = `${eddie.luckyNumber()}`
+                        console.log("luckyNumber()", eddie.luckyNumber())
+                    }
+                </script>
+                <script>
+                    document.getElementById('sub-section').innerText = `${eddie.luckyNumber()}`
+                </script>
+            </div>
+            <p class='statement'>
+                a short paragraph about a few things that I feel are important to talk about.
+                this may not be a paragraph as much as a rant.
+                basically coding is super elite, it amongsth the greatest minds who have ever been who have brought this technology to us.
+                no enought can be said about the few who gain the abiltiys to understand evertyhing there is to understand through the simple and perfect language that is computer language.
+                I am very happy to bring these thoughts to you as I am diving deep into this amazing world.  
+                thank you for taking the time to read I have to get back to designing this project.
+            </p>
+        </body>
+        <footer>
+            <span>
+                <p>contact</p> <a href="https://eddiejorden.tech/">eddie@eddieJorden.tech</a>
+            </span>
+        </footer>
+    </html>
