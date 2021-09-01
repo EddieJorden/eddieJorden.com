@@ -9,6 +9,12 @@ body {
     align-items: center;
 }
 
+.button-number-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
 .sub-section {
     background-color: rgb(160, 48, 4);
     width: 61px;
@@ -18,13 +24,14 @@ body {
     align-items: center;
     border-radius: 10px;
     margin-bottom: 42px;
+    color:seashell;
 }
 
-.class-button-box {
+/* .class-button-box {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 button {
     
@@ -33,7 +40,8 @@ button {
     height: 120px;
     border-radius: 10px;
     cursor: pointer;
-    color:rgb(198, 239, 255)
+    color:rgb(198, 239, 255);
+    font-size: 18px;
 }
 
 .statement {
