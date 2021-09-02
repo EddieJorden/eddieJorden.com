@@ -1,7 +1,6 @@
 class Person {
     constructor(name) {
         this.name = name;
-        
     }
     luckyNumber() {
         const randomNumber = Math.floor(Math.random() * 9) + 1
@@ -9,7 +8,7 @@ class Person {
         return randomNumber
     } 
 } 
-const eddie = new Person("eddie")
+const eddie = new Person(document.getElementById('user-input').value, )
 console.log(eddie)
 
 const luckyNumber = eddie.luckyNumber()
@@ -22,7 +21,7 @@ document.getElementById('user-input').value = 'name'
     // should console.log what ever was entered in the input field with the same id
 const getVal = () => {
     userName = document.getElementById('user-input').value;
-    console.log('userName', userName)
+    console.log('userName', eddie)
     document.getElementById('greeting').innerText = `hello ${userName} your lucky number is ${luckyNumber}`
     return userName
 }
