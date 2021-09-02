@@ -1,61 +1,31 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <script>
-                console.log("hola world")
-            </script>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale-1.0'>
             <link rel="stylesheet" href="eddieJorden.com.css">
             <meta charset="utf-8" />
+            <title>hello from eddie coder</title>
         </head>
         <body>
             <h1 id='title'>
             </h1>
-            <script type = "text/javascript">
-                class Person {
-                    constructor(name) {
-                        this.name = name;
-                        
-                    }
-                    luckyNumber() {
-                        const randomNumber = Math.floor(Math.random() * 9) + 1
-                        return randomNumber
-                    } 
-                } 
-                const eddie = new Person("eddie")
-
-                document.getElementById('title').innerText = `a string welcoming ${eddie.name} who is the coder`
-
-
-                console.log("this.name", this.name)
-                console.log(eddie)
-                
-            </script>
-            <h2>
-                your lucky # 1 - 9 today is...
+                <label>please enter your name</label>
+                <input type='text' id='user-input'/><br>
+                <button id='submitButton' type='button' onClick='getVal()'>submit</button>
+            <h2 id='greeting'>
             </h2>
             <div class='button-number-box'>
                 <div class='sub-section'>
                     <h2 id='sub-section'>
                     </h2>
                 </div>
-    
                 <div class='button-box'>
                     <button onClick='onClick()'>
                         Request a new number from eddie coder
                     </button>
-                    <script>
-                        const onClick = (e) => {
-                            
-                            document.getElementById('sub-section').innerText = `${eddie.luckyNumber()}`
-                            console.log("luckyNumber()", eddie.luckyNumber())
-                        }
-                    </script>
-                    <script>
-                        document.getElementById('sub-section').innerText = `${eddie.luckyNumber()}`
-                    </script>
                 </div>
             </div>
-            
             <p class='statement'>
                 a short paragraph about a few things that I feel are important to talk about.
                 this may not be a paragraph as much as a rant.
@@ -64,11 +34,13 @@
                 I am very happy to bring these thoughts to you as I am diving deep into this amazing world.  
                 thank you for taking the time to read I have to get back to designing this project.
             </p>
+            <script src='eddieJorden.com.js'>
+            </script>
         </body>
         <footer>
-                <div>
-                        <p>contact: <span><a href="https://eddiejorden.tech/">eddieJorden.tech</a></span></p>
-                </div>
+            <div>
+                    <p>contact: <span><a href="https://eddiejorden.tech/">eddieJorden.tech</a></span></p>
+            </div>
         </footer>
     </html>
 
